@@ -1,5 +1,5 @@
 /* --------------------------------------------------------
-   소담정과 - Premium Traditional Stylings (style.css)
+   하루온담 - Premium Traditional Stylings (style.css)
    Aesthetic: Beige Tone, Elegant, Low Sugar & Health, Traditional Accents
    Font: Gowun Batang, Noto Serif KR
 ----------------------------------------------------------- */
@@ -984,6 +984,11 @@ strong {
 
 .contact-link.instagram .icon {
     background: linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+}
+
+.contact-link.phone .icon {
+    background-color: #E8F5E9;
+    color: #2E7D32;
 }
 
 .contact-link .txt {
