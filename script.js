@@ -193,4 +193,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 6. Products Tab Switcher
+    const tabButtons = document.querySelectorAll('.btn-tab');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    if (tabButtons.length > 0 && tabPanels.length > 0) {
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                tabButtons.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                // Hide all panels
+                tabPanels.forEach(panel => panel.classList.remove('active'));
+                // Show matching panel
+                const targetTabId = btn.getAttribute('data-tab');
+                const targetPanel = document.getElementById(targetTabId);
+                if (targetPanel) {
+                    targetPanel.classList.add('active');
+                }
+            });
+        });
+    }
 });

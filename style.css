@@ -1240,6 +1240,418 @@ strong {
     100% { border-radius: 70% 30% 50% 50% / 40% 50% 60% 50%; }
 }
 
+/* Products Section Tabs & Panels */
+.product-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 45px;
+}
+
+.btn-tab {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 28px;
+    background-color: var(--white);
+    color: var(--text-light);
+    border: 1px solid rgba(140, 98, 57, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.btn-tab:hover {
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+.btn-tab.active {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(140, 98, 57, 0.2);
+}
+
+.tab-panel {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.tab-panel.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Oranda Placeholders */
+.oranda-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: var(--transition-smooth);
+}
+
+.placeholder-emoji {
+    font-size: 64px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+    z-index: 2;
+    transition: var(--transition-smooth);
+}
+
+.placeholder-tag {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.program-card:hover .placeholder-emoji {
+    transform: scale(1.15) rotate(5deg);
+}
+
+/* Gradient Themes for Oranda */
+.oranda-classic-bg {
+    background: radial-gradient(circle at center, #F6E2C6 0%, #D4AF37 100%);
+}
+
+.oranda-chocolate-bg {
+    background: radial-gradient(circle at center, #8D5B4C 0%, #4E2C22 100%);
+}
+
+.oranda-walnut-bg {
+    background: radial-gradient(circle at center, #F4EAD4 0%, #B58D5F 100%);
+}
+
+.oranda-strawberry-bg {
+    background: radial-gradient(circle at center, #FFD2D2 0%, #F57D9F 100%);
+}
+
+.oranda-black-bg {
+    background: radial-gradient(circle at center, #6A6E72 0%, #2A2C2E 100%);
+}
+
+/* Sticker Service Section Styles */
+.sticker-section {
+    background-color: var(--accent-light);
+}
+
+.sticker-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.sticker-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(140, 98, 57, 0.08);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: var(--transition-smooth);
+}
+
+.sticker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.sticker-preview {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px dashed rgba(140, 98, 57, 0.15);
+    position: relative;
+}
+
+.sticker-preview::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-image: radial-gradient(circle, transparent 6px, var(--white) 6px);
+    background-size: 16px 16px;
+    background-position: -8px 0;
+    z-index: 2;
+}
+
+.sticker-preview h4 {
+    font-size: 15px;
+    margin: 8px 0 5px;
+    color: var(--text-dark);
+}
+
+.sticker-text {
+    font-size: 11px;
+    line-height: 1.4;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.sticker-date {
+    font-size: 9px;
+    color: var(--text-muted);
+}
+
+.theme-icon {
+    font-size: 28px;
+}
+
+/* Theme Variations */
+.wedding-theme {
+    background-color: #FAF4F4;
+    border: 3px double #E6C5C5;
+    border-radius: 8px 8px 0 0;
+    margin: 15px 15px 0 15px;
+    height: calc(100% - 15px);
+}
+
+.baby-theme {
+    background-color: #F3F7FA;
+    border: 3px double #CCD9E2;
+    border-radius: 8px 8px 0 0;
+    margin: 15px 15px 0 15px;
+    height: calc(100% - 15px);
+}
+
+.corp-theme {
+    background-color: #F6F6F3;
+    border: 3px double #D7D7CE;
+    border-radius: 8px 8px 0 0;
+    margin: 15px 15px 0 15px;
+    height: calc(100% - 15px);
+}
+
+.kids-theme {
+    background-color: #FFFDF4;
+    border: 3px double #ECE4C8;
+    border-radius: 8px 8px 0 0;
+    margin: 15px 15px 0 15px;
+    height: calc(100% - 15px);
+}
+
+.sticker-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sticker-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.sticker-info p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+/* Sticker steps */
+.sticker-process {
+    margin-top: 50px;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(140, 98, 57, 0.1);
+}
+
+.sticker-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.step-card {
+    position: relative;
+    padding-left: 50px;
+}
+
+.step-num {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-light);
+    line-height: 1;
+}
+
+.step-card h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.step-card p {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Order Process Timeline */
+.process-section {
+    background-color: var(--white);
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 31px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--primary-light);
+}
+
+.timeline-step {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 80px;
+}
+
+.timeline-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-marker {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(140, 98, 57, 0.2);
+    border: 3px solid var(--white);
+}
+
+.step-content h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.step-content p {
+    font-size: 15px;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.lead-time-box {
+    background-color: var(--background);
+    border-radius: var(--border-radius-md);
+    padding: 20px 25px;
+    border: 1px solid rgba(140, 98, 57, 0.1);
+}
+
+.lead-time-box ul {
+    list-style: none;
+}
+
+.lead-time-box li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 15px;
+}
+
+.lead-time-box li::before {
+    content: '•';
+    color: var(--primary);
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.lead-time-box li:last-child {
+    margin-bottom: 0;
+}
+
+/* Food Hygiene Table Styles */
+.hygiene-section {
+    background-color: var(--background);
+}
+
+.hygiene-table-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: var(--white);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(140, 98, 57, 0.1);
+    padding: 10px;
+}
+
+.hygiene-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+
+.hygiene-table th, .hygiene-table td {
+    padding: 16px 20px;
+    border: 1px solid rgba(140, 98, 57, 0.08);
+    line-height: 1.6;
+}
+
+.hygiene-table th {
+    background-color: var(--primary-light);
+    color: var(--primary);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    width: 180px;
+    vertical-align: middle;
+}
+
+.hygiene-table td {
+    color: var(--text-dark);
+}
+
 /* Responsive Styles */
 @media (max-width: 991px) {
     .section-padding {
@@ -1281,6 +1693,16 @@ strong {
     }
     .contact-form-area {
         padding: 40px;
+    }
+
+    /* Sticker Grid & Steps in Tablet */
+    .sticker-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .sticker-steps {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 
@@ -1325,5 +1747,56 @@ strong {
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+
+    /* Sticker Grid in Mobile */
+    .sticker-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Timeline Process in Mobile */
+    .timeline-container::before {
+        left: 17px;
+    }
+    .timeline-step {
+        padding-left: 50px;
+        margin-bottom: 40px;
+    }
+    .step-marker {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+        left: -1px;
+    }
+    .step-content h3 {
+        font-size: 18px;
+    }
+
+    /* Product Tabs in Mobile */
+    .product-tabs {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .btn-tab {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    /* Hygiene Table in Mobile */
+    .hygiene-table th, 
+    .hygiene-table td {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(140, 98, 57, 0.08);
+    }
+    .hygiene-table th {
+        text-align: left;
+        background-color: var(--primary-light);
+        padding: 10px 15px;
+    }
+    .hygiene-table td {
+        padding: 12px 15px;
     }
 }
