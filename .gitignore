@@ -1,2 +1,8 @@
 # Ignore practice files subfolder
 실습파일/
+node_modules/
+package.json
+package-lock.json
+*.xlsx
+네이버구매.txt
+하루온담 가격표.txt
