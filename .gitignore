@@ -6,6 +6,7 @@ package-lock.json
 *.xlsx
 네이버구매.txt
 하루온담 가격표.txt
+desktop.ini
 
 # Ignore root-level images placed by user
 /*.jpg
