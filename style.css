@@ -622,6 +622,12 @@ strong {
     gap: 30px;
 }
 
+#tab-jeonggwa .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 .program-card {
     background-color: var(--background);
     border-radius: var(--border-radius-md);
@@ -1676,7 +1682,8 @@ strong {
         gap: 40px;
     }
     .philosophy-grid,
-    .programs-grid {
+    .programs-grid,
+    #tab-jeonggwa .programs-grid {
         grid-template-columns: 1fr;
     }
     .special-container {
@@ -1855,4 +1862,18 @@ strong {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Force Jeonggwa tab to be 2 columns */
+.jeonggwa-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+}
+
+@media (max-width: 768px) {
+    .jeonggwa-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
 
