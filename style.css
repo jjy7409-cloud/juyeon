@@ -1876,4 +1876,27 @@ strong {
     }
 }
 
+/* Naver SmartStore Green Button Style */
+.btn-naver {
+    background-color: #03c75a !important;
+    color: var(--white) !important;
+    border: 1px solid #03c75a !important;
+    box-shadow: 0 4px 14px rgba(3, 199, 90, 0.2);
+}
+.btn-naver:hover {
+    background-color: #02b34f !important;
+    border-color: #02b34f !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(3, 199, 90, 0.4);
+}
+.contact-link.naver {
+    background-color: #03c75a !important;
+    border-color: #03c75a !important;
+    color: var(--white) !important;
+}
+.contact-link.naver:hover {
+    background-color: #02b34f !important;
+    border-color: #02b34f !important;
+}
+
 
