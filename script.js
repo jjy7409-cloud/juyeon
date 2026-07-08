@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let qty = parseInt(calcQty.value) || 0;
             
             // Limit limits
-            if (qty < 10) qty = 10;
+            if (qty < 5) qty = 5;
             if (qty > 1000) qty = 1000;
             calcQty.value = qty;
 
@@ -152,8 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (btnQtyMinus && btnQtyPlus) {
             btnQtyMinus.addEventListener('click', () => {
                 let currentVal = parseInt(calcQty.value) || 50;
-                if (currentVal > 10) {
-                    calcQty.value = currentVal - 10; // 10개 단위 증감
+                if (currentVal > 5) {
+                    calcQty.value = currentVal - 5; // 5개 단위 증감
                     calculateTotal();
                 }
             });
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
             btnQtyPlus.addEventListener('click', () => {
                 let currentVal = parseInt(calcQty.value) || 50;
                 if (currentVal < 1000) {
-                    calcQty.value = currentVal + 10;
+                    calcQty.value = currentVal + 5; // 5개 단위 증감
                     calculateTotal();
                 }
             });
