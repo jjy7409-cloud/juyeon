@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Scroll Reveal Animation using Intersection Observer
     const animateElements = document.querySelectorAll(
-        '.philosophy-card, .program-card, .feature-item, .about-image-area, .about-text-area, .contact-card'
+        '.promise-card, .program-card, .feature-item, .about-image-area, .about-text-area, .contact-card'
     );
 
     // Initialize styling classes for animations
