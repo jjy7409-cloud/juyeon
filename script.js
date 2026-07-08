@@ -180,11 +180,33 @@ document.addEventListener('DOMContentLoaded', () => {
             // Extract inputs
             const customerName = document.getElementById('customer-name').value;
             const eventType = document.getElementById('event-type').options[document.getElementById('event-type').selectedIndex].text;
+            const phone = document.getElementById('phone').value;
             const qty = document.getElementById('form-qty').value;
             const date = document.getElementById('delivery-date').value;
+            const messageText = document.getElementById('message').value;
 
-            // Beautiful feedback modal / alert
-            alert(`감사합니다, ${customerName} 고객님!\n\n신청하신 [${eventType} 답례품 / ${qty}개 / 희망 배송일: ${date}] 견적 문의가 성공적으로 접수되었습니다. 기재해주신 연락처로 24시간 이내에 친절하게 상담 전화를 드리겠습니다.`);
+            // Formulate KakaoTalk Chat Template
+            const formDataText = `[하루온담 답례품 견적 신청]\n` +
+                                 `• 성함: ${customerName}님\n` +
+                                 `• 연락처: ${phone}\n` +
+                                 `• 행사 분류: ${eventType}\n` +
+                                 `• 예상 수량: ${qty}개\n` +
+                                 `• 희망 배송일: ${date}\n` +
+                                 `• 문의 및 요청 사항:\n${messageText}`;
+
+            // Copy text to clipboard and open KakaoTalk Chat link
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(formDataText).then(() => {
+                    alert(`📋 견적 요청서 내용이 클립보드에 복사되었습니다!\n\n확인 버튼을 누르시면 카카오톡 1:1 채팅창이 열립니다. 입력창을 길게 눌러 '붙여넣기' 하신 뒤 전송해 주시면 신속하게 견적을 도와드리겠습니다.`);
+                    window.open('http://pf.kakao.com/_npxmxnG/chat', '_blank');
+                }).catch(() => {
+                    alert(`카카오톡 1:1 견적 상담으로 연결합니다.\n\n내용이 복사가 안 되었을 경우 직접 입력창에 내용을 보내주시면 상세 상담을 진행해 드립니다.`);
+                    window.open('http://pf.kakao.com/_npxmxnG/chat', '_blank');
+                });
+            } else {
+                alert(`카카오톡 1:1 견적 상담으로 연결합니다.`);
+                window.open('http://pf.kakao.com/_npxmxnG/chat', '_blank');
+            }
             
             contactForm.reset();
             if (calcQty) {
