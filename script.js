@@ -198,14 +198,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(formDataText).then(() => {
                     alert(`📋 견적 요청서 내용이 클립보드에 복사되었습니다!\n\n확인 버튼을 누르시면 카카오톡 1:1 채팅창이 열립니다. 입력창을 길게 눌러 '붙여넣기' 하신 뒤 전송해 주시면 신속하게 견적을 도와드리겠습니다.`);
-                    window.open('http://pf.kakao.com/_npxmxnG/chat', '_blank');
+                    window.open('https://open.kakao.com/o/swUF1xCi', '_blank');
                 }).catch(() => {
                     alert(`카카오톡 1:1 견적 상담으로 연결합니다.\n\n내용이 복사가 안 되었을 경우 직접 입력창에 내용을 보내주시면 상세 상담을 진행해 드립니다.`);
-                    window.open('http://pf.kakao.com/_npxmxnG/chat', '_blank');
+                    window.open('https://open.kakao.com/o/swUF1xCi', '_blank');
                 });
             } else {
                 alert(`카카오톡 1:1 견적 상담으로 연결합니다.`);
-                window.open('http://pf.kakao.com/_npxmxnG/chat', '_blank');
+                window.open('https://open.kakao.com/o/swUF1xCi', '_blank');
             }
             
             contactForm.reset();
