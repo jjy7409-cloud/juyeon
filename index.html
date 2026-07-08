@@ -335,16 +335,133 @@
         </div>
     </section>
 
-    <!-- Premium Set Configuration Guide -->
-    <section class="set-guide-section" style="padding: 60px 0; background-color: #FAF8F5; border-top: 1px solid rgba(140, 98, 57, 0.08); border-bottom: 1px solid rgba(140, 98, 57, 0.08);">
-        <div class="container text-center">
-            <div class="section-header text-center" style="margin-bottom: 40px;">
-                <span class="subtitle" style="font-size: 13px; font-weight: 700; color: #C5A880; letter-spacing: 0.15em; text-transform: uppercase; display: block; margin-bottom: 8px;">Gift Set Catalog</span>
-                <h2 class="section-title" style="font-family: 'Gowun Batang', serif; font-size: 32px; color: var(--text-dark); margin-bottom: 16px;">하루온담 <strong>프리미엄 세트 구성 안내</strong> 🎁</h2>
-                <p class="section-desc" style="font-size: 15px; color: var(--text-light); max-width: 700px; margin: 0 auto;">정성을 담아 준비한 하루온담의 명품 수제 정과 및 오란다 선물 세트 라인업입니다.</p>
+    <!-- Premium Set Menu Section -->
+    <section id="set-menu" class="set-menu-section section-padding" style="background-color: #FAF8F5; border-top: 1px solid rgba(140, 98, 57, 0.08); border-bottom: 1px solid rgba(140, 98, 57, 0.08);">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle" style="font-size: 13px; font-weight: 700; color: #C5A880; letter-spacing: 0.15em; text-transform: uppercase; display: block; margin-bottom: 8px;">Premium Gift Sets</span>
+                <h2 class="section-title" style="font-family: 'Gowun Batang', serif; font-size: 32px; color: var(--text-dark); margin-bottom: 16px;">하루온담 <strong>프리미엄 세트 메뉴</strong> 🎁</h2>
+                <p class="section-desc" style="font-size: 15px; color: var(--text-light); max-width: 700px; margin: 0 auto;">소중한 분들께 전하는 가장 확실한 격식, 정성을 가득 담아 구성한 세트 메뉴 라인업입니다.</p>
             </div>
-            <div class="set-guide-image-container" style="max-width: 900px; margin: 0 auto; box-shadow: var(--card-shadow); border-radius: 12px; overflow: hidden; border: 4px solid var(--white);">
-                <img src="images/premium_sets_guide.png" alt="하루온담 프리미엄 세트 구성 안내판" style="width: 100%; height: auto; display: block;">
+            
+            <div class="set-menu-grid">
+                <!-- Set 1 -->
+                <div class="set-menu-card">
+                    <div class="set-img-frame">
+                        <img src="images/main_representative.jpg" alt="정과 4종 세트 박스포장">
+                        <span class="set-price-tag">12,000원</span>
+                    </div>
+                    <div class="set-card-content">
+                        <h3>정과 4종 세트 박스포장</h3>
+                        <p class="set-composition">구성: 호두, 생강호두, 아몬드, 콩고물아몬드 각 30g</p>
+                        <p class="set-desc">하루온담의 베스트셀러 정과 4가지를 한 번에 가볍게 만날 수 있는 실속형 선물 박스입니다.</p>
+                        <button class="btn btn-outline btn-block" onclick="selectSetAndScroll('set-4type-pkg')">견적 계산하기 <i class="fa-solid fa-calculator"></i></button>
+                    </div>
+                </div>
+                <!-- Set 2 -->
+                <div class="set-menu-card">
+                    <div class="set-img-frame">
+                        <img src="images/oranda_walnut.jpg" alt="오란다 10개 세트 박스포장">
+                        <span class="set-price-tag">23,000원</span>
+                    </div>
+                    <div class="set-card-content">
+                        <h3>오란다 10개 세트 박스포장</h3>
+                        <p class="set-composition">구성: 수제 오란다 10개입</p>
+                        <p class="set-desc">100% 국산 쌀조청으로 만들어 딱딱하지 않고 촉촉하고 부드러운 인기 오란다 10개들이 구성입니다.</p>
+                        <button class="btn btn-outline btn-block" onclick="selectSetAndScroll('set-oranda10')">견적 계산하기 <i class="fa-solid fa-calculator"></i></button>
+                    </div>
+                </div>
+                <!-- Set 3 -->
+                <div class="set-menu-card">
+                    <div class="set-img-frame">
+                        <img src="images/oranda_chocolate.jpg" alt="오란다 5개 세트 실속형">
+                        <span class="set-price-tag">11,000원</span>
+                    </div>
+                    <div class="set-card-content">
+                        <h3>오란다 5개 세트 실속형</h3>
+                        <p class="set-composition">구성: 수제 오란다 5개입 (실속포장)</p>
+                        <p class="set-desc">부담 없는 가벼운 감사 선물용으로 제격인 컴팩트하고 실속 있는 5개들이 실속형 포장 세트입니다.</p>
+                        <button class="btn btn-outline btn-block" onclick="selectSetAndScroll('set-oranda5-sil')">견적 계산하기 <i class="fa-solid fa-calculator"></i></button>
+                    </div>
+                </div>
+                <!-- Set 4 -->
+                <div class="set-menu-card">
+                    <div class="set-img-frame">
+                        <img src="images/oranda_strawberry.jpg" alt="오란다 5개 세트 박스포장">
+                        <span class="set-price-tag">12,000원</span>
+                    </div>
+                    <div class="set-card-content">
+                        <h3>오란다 5개 세트 박스포장</h3>
+                        <p class="set-composition">구성: 수제 오란다 5개입 (선물상자)</p>
+                        <p class="set-desc">돌잔치, 가벼운 단체 선물에 강추하는 고급 감사 크라프트 박스에 예쁜 리본을 두른 5개입 패키지입니다.</p>
+                        <button class="btn btn-outline btn-block" onclick="selectSetAndScroll('set-oranda5')">견적 계산하기 <i class="fa-solid fa-calculator"></i></button>
+                    </div>
+                </div>
+                <!-- Set 5 -->
+                <div class="set-menu-card">
+                    <div class="set-img-frame">
+                        <img src="images/teatime_cozy.png" alt="오란다 5개 + 호두정과 80g 세트">
+                        <span class="set-price-tag">18,900원</span>
+                    </div>
+                    <div class="set-card-content">
+                        <h3>오란다 5개 + 호두정과 80g 세트</h3>
+                        <p class="set-composition">구성: 오란다 5개 + 수제 호두정과 80g</p>
+                        <p class="set-desc">부드러운 조청 쌀오란다 5개와 오븐에 직접 구운 대표 영양 호두정과를 동시에 즐길 수 있는 추천 세트입니다.</p>
+                        <button class="btn btn-outline btn-block" onclick="selectSetAndScroll('set-oranda5-walnut')">견적 계산하기 <i class="fa-solid fa-calculator"></i></button>
+                    </div>
+                </div>
+                <!-- Set 6 -->
+                <div class="set-menu-card">
+                    <div class="set-img-frame">
+                        <img src="images/set_2type.jpg" alt="호두정과 120g + 아몬드정과 200g 세트">
+                        <span class="set-price-tag">22,000원</span>
+                    </div>
+                    <div class="set-card-content">
+                        <h3>호두정과 120g + 아몬드정과 200g 세트</h3>
+                        <p class="set-composition">구성: 호두정과 120g + 아몬드정과 200g</p>
+                        <p class="set-desc">바삭바삭 오븐에 구워 떫은맛 없이 담백한 호두정과와 남녀노소 영양 만점의 최상급 아몬드정과의 2종 콜라보입니다.</p>
+                        <button class="btn btn-outline btn-block" onclick="selectSetAndScroll('mixed-walnut-almond')">견적 계산하기 <i class="fa-solid fa-calculator"></i></button>
+                    </div>
+                </div>
+                <!-- Set 7 -->
+                <div class="set-menu-card">
+                    <div class="set-img-frame">
+                        <img src="images/ginger_walnut.jpg" alt="호두정과 120g + 생강호두정과 110g 세트">
+                        <span class="set-price-tag">24,000원</span>
+                    </div>
+                    <div class="set-card-content">
+                        <h3>호두정과 120g + 생강호두정과 110g 세트</h3>
+                        <p class="set-composition">구성: 호두정과 120g + 생강호두정과 110g</p>
+                        <p class="set-desc">인기 오리지널 호두정과와 직접 손수 세척해 착즙한 국내산 생강 원즙의 향긋함을 입힌 명품 생강호두정과의 조합입니다.</p>
+                        <button class="btn btn-outline btn-block" onclick="selectSetAndScroll('mixed-walnut-ginger')">견적 계산하기 <i class="fa-solid fa-calculator"></i></button>
+                    </div>
+                </div>
+                <!-- Set 8 -->
+                <div class="set-menu-card">
+                    <div class="set-img-frame">
+                        <img src="images/almond_jeonggwa.jpg" alt="호두정과 + 생강호두정과 + 아몬드정과 3종 세트">
+                        <span class="set-price-tag">33,000원</span>
+                    </div>
+                    <div class="set-card-content">
+                        <h3>호두정과 + 생강호두정과 + 아몬드정과 3종 세트</h3>
+                        <p class="set-composition">구성: 호두 120g + 생강호두 110g + 아몬드 200g</p>
+                        <p class="set-desc">양가 어르신 명절 선물이나 첫인상 상견례 자리, 중요한 예단 선물에 가장 많이 선택되는 3종 대용량 명품 세트입니다.</p>
+                        <button class="btn btn-outline btn-block" onclick="selectSetAndScroll('mixed-3type')">견적 계산하기 <i class="fa-solid fa-calculator"></i></button>
+                    </div>
+                </div>
+                <!-- Set 9 -->
+                <div class="set-menu-card">
+                    <div class="set-img-frame">
+                        <img src="images/kongalmond_jeonggwa.jpg" alt="호두정과 + 생강호두정과 + 콩고물아몬드정과 4종 세트">
+                        <span class="set-price-tag">42,000원</span>
+                    </div>
+                    <div class="set-card-content">
+                        <h3>호두정과 + 생강호두정과 + 콩고물아몬드정과 4종 세트</h3>
+                        <p class="set-composition">구성: 호두 120g + 생강호두 110g + 콩고물아몬드 200g + 아몬드 200g</p>
+                        <p class="set-desc">하루온담 정과 라인업의 정수를 담아 압도적 풍성함과 고품격 포장을 자랑하는 대용량 4종 패키지입니다.</p>
+                        <button class="btn btn-outline btn-block" onclick="selectSetAndScroll('mixed-4type')">견적 계산하기 <i class="fa-solid fa-calculator"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -218,3 +218,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Global Helper Function for Set Menu Calculator Linkage
+window.selectSetAndScroll = function(value) {
+    const select = document.getElementById('calc-type');
+    if (select) {
+        select.value = value;
+        // Trigger change event to recalculate price
+        select.dispatchEvent(new Event('change'));
+    }
+    const target = document.getElementById('packaging');
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+    }
+};
