@@ -167,6 +167,29 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+
+        // Visual Card Selection Handling
+        const calcSetCards = document.querySelectorAll('.calc-set-card');
+        calcSetCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const value = card.getAttribute('data-value');
+                calcType.value = value;
+                calcType.dispatchEvent(new Event('change'));
+            });
+        });
+
+        // Sync hidden select change to active card
+        calcType.addEventListener('change', () => {
+            const currentValue = calcType.value;
+            calcSetCards.forEach(card => {
+                if (card.getAttribute('data-value') === currentValue) {
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+        });
+
         // Initial Calculation
         calculateTotal();
     }
