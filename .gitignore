@@ -13,7 +13,3 @@ desktop.ini
 /*.png
 /*.jpeg
 
-# Ignore printable menu creator tools
-menu.html
-menu_script.js
-menu_style.css
