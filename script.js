@@ -1,3 +1,11 @@
+// 모바일 브라우저용 실시간 에러 로깅 (원인 추적용 임시 추가)
+window.addEventListener('error', function(e) {
+    alert("오류 발생: " + e.message + "\n파일: " + e.filename + "\n라인: " + e.lineno);
+});
+window.addEventListener('unhandledrejection', function(e) {
+    alert("비동기 오류 발생: " + e.reason);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Mobile Navigation Menu Toggle
     const mobileToggle = document.querySelector('.mobile-nav-toggle');
@@ -92,18 +100,25 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const scrollObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target); // Trigger once
-            }
-        });
-    }, observerOptions);
+    if (window.IntersectionObserver) {
+        const scrollObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Trigger once
+                }
+            });
+        }, observerOptions);
 
-    animateElements.forEach(el => {
-        scrollObserver.observe(el);
-    });
+        animateElements.forEach(el => {
+            scrollObserver.observe(el);
+        });
+    } else {
+        // IntersectionObserver 미지원 브라우저용 예외 처리
+        animateElements.forEach(el => {
+            el.classList.add('active');
+        });
+    }
 
     // 4. Interactive Estimate Calculator (간이 견적 계산기)
     const calcType = document.getElementById('calc-type');
