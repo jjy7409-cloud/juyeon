@@ -2199,8 +2199,8 @@ strong {
 /* Premium Set Menu Grid Styles */
 .set-menu-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
     margin-top: 50px;
 }
 
@@ -2225,7 +2225,7 @@ strong {
 .set-img-frame {
     position: relative;
     width: 100%;
-    height: 220px;
+    height: 140px;
     overflow: hidden;
 }
 
@@ -2242,20 +2242,20 @@ strong {
 
 .set-price-tag {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     background-color: var(--primary);
     color: var(--white);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
-    padding: 6px 12px;
+    padding: 4px 8px;
     border-radius: 4px;
     z-index: 2;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
 }
 
 .set-card-content {
-    padding: 24px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -2263,46 +2263,73 @@ strong {
 }
 
 .set-card-content h3 {
-    font-size: 19px;
+    font-size: 15px;
     color: var(--text-dark);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-family: var(--font-heading);
 }
 
 .set-composition {
-    font-size: 13px;
+    font-size: 11.5px;
     color: var(--primary);
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     background-color: var(--background);
-    padding: 6px 10px;
+    padding: 4px 8px;
     border-radius: 4px;
     display: inline-block;
     width: 100%;
 }
 
 .set-desc {
-    font-size: 13.5px;
+    font-size: 12.5px;
     color: var(--text-light);
-    line-height: 1.6;
-    margin-bottom: 24px;
+    line-height: 1.5;
+    margin-bottom: 12px;
     flex-grow: 1;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
     .set-menu-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    .set-img-frame {
+        height: 160px;
     }
 }
 
 @media (max-width: 768px) {
     .set-menu-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .set-img-frame {
+        height: 130px;
+    }
+    .set-card-content {
+        padding: 12px;
+    }
+    .set-card-content h3 {
+        font-size: 14px;
+    }
+    .set-desc {
+        font-size: 11.5px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 }
 
-/* Unified Process & Hygiene Section Styles */
+@media (max-width: 480px) {
+    .set-menu-grid {
+        grid-template-columns: 1fr;
+    }
+    .set-img-frame {
+        height: 180px;
+    }
+}
 @media (max-width: 991px) {
     .process-hygiene-grid {
         grid-template-columns: 1fr !important;
