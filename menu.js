@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'set-oranda5-walnut',
-            name: '오란다 5개 + 호두정과 80g 세트',
-            desc: '감사 스티커 무료 제작 부착 포함 실속형 선물 패키지',
+            name: '수제오란다 5개 + 정과믹스 80g 세트',
+            desc: '수제 오란다 5개와 하루온담의 인기 정과 믹스 80g으로 구성된 답례 세트',
             cat: 'sets',
             show: true,
             price: '18,900'
@@ -120,27 +120,19 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'set-walnut-almond',
-            name: '호두정과 120g + 아몬드정과 200g 세트',
-            desc: '고급 박스 및 쇼핑백 포함 전통 명절 추천 선물세트',
+            name: '정과믹스 2구 세트',
+            desc: '하루온담 정과 2종 믹스 구성 (포장 박스 및 쇼핑백 포함)',
             cat: 'sets',
             show: true,
-            price: '24,000'
+            price: '18,000'
         },
         {
             id: 'set-walnut-ginger',
-            name: '호두정과 120g + 생강호두정과 110g 세트',
-            desc: '고급 박스 및 쇼핑백 포함 전통 명절 추천 선물세트',
+            name: '정과믹스 3구 세트',
+            desc: '하루온담 정과 3종 믹스 구성 (포장 박스 및 쇼핑백 포함)',
             cat: 'sets',
             show: true,
-            price: '24,000'
-        },
-        {
-            id: 'set-3type',
-            name: '정과 3종 명품 세트 (박스/쇼핑백)',
-            desc: '품격 있는 선물용 (호두120g + 생강호두110g + 아몬드200g)',
-            cat: 'sets',
-            show: true,
-            price: '36,000'
+            price: '26,000'
         },
         {
             id: 'set-4type-premium',
@@ -211,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Initialize Data (Load from localStorage or use defaults)
     const initData = () => {
-        const defaultVersion = "3.2"; // Incremented version for removing 4-type set and updating oranda set prices
+        const defaultVersion = "3.3"; // Incremented version for updating gift sets and deleting 3-type set
         const savedVersion = localStorage.getItem('haruondam_menu_version');
         const savedItems = localStorage.getItem('haruondam_menu_items');
         
