@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cat: 'jeonggwa',
             show: true,
             options: [
-                { name: '30g', price: '2,500', show: true },
                 { name: '80g', price: '5,900', show: true }
             ]
         },
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cat: 'jeonggwa',
             show: true,
             options: [
-                { name: '30g', price: '3,000', show: true },
                 { name: '80g', price: '6,900', show: true }
             ]
         },
@@ -31,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cat: 'jeonggwa',
             show: true,
             options: [
-                { name: '30g', price: '2,500', show: true },
                 { name: '80g', price: '5,900', show: true }
             ]
         },
@@ -42,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cat: 'jeonggwa',
             show: true,
             options: [
-                { name: '30g', price: '3,000', show: true },
                 { name: '80g', price: '6,900', show: true }
             ]
         },
@@ -74,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'or-chocotoring',
-            name: '초코토링오란다',
+            name: '초코토핑오란다',
             desc: '벨기에산 고급 초콜릿 코팅과 바삭한 크런치 토핑으로 달콤함을 더한 수제 오란다',
             cat: 'oranda',
             show: true,
@@ -223,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Initialize Data (Load from localStorage or use defaults)
     const initData = () => {
-        const defaultVersion = "3.0"; // Incremented version to show new 5 orandas and unified prices
+        const defaultVersion = "3.1"; // Incremented version for removing 30g jeonggwa and renaming choco oranda
         const savedVersion = localStorage.getItem('haruondam_menu_version');
         const savedItems = localStorage.getItem('haruondam_menu_items');
         
