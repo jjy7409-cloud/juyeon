@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cat: 'jeonggwa',
             show: true,
             options: [
-                { name: '80g', price: '5,900', show: true }
+                { name: '80g', price: '5,000', show: true }
             ]
         },
         {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cat: 'jeonggwa',
             show: true,
             options: [
-                { name: '80g', price: '6,900', show: true }
+                { name: '80g', price: '6,000', show: true }
             ]
         },
         {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cat: 'jeonggwa',
             show: true,
             options: [
-                { name: '80g', price: '5,900', show: true }
+                { name: '80g', price: '5,000', show: true }
             ]
         },
         {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cat: 'jeonggwa',
             show: true,
             options: [
-                { name: '80g', price: '6,900', show: true }
+                { name: '80g', price: '6,000', show: true }
             ]
         },
 
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 'or-nut',
             name: '견과오란다',
-            desc: '호두, 아몬드, 해바라기씨 등 다양한 견과류를 듬뿍 올려 고소함과 씹는 맛을 더한 오란다',
+            desc: '호두, 아몬드, 해바라기씨 등 다양한 견과류를 듬뿍 올려 고소함 and 씹는 맛을 더한 오란다',
             cat: 'oranda',
             show: true,
             price: '2,000'
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: '수제 오란다 5개와 하루온담의 인기 정과 믹스 80g으로 구성된 답례 세트',
             cat: 'sets',
             show: true,
-            price: '18,900'
+            price: '18,000'
         },
         {
             id: 'set-walnut6',
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Initialize Data (Load from localStorage or use defaults)
     const initData = () => {
-        const defaultVersion = "3.4"; // Incremented version for deleting 4-type premium set
+        const defaultVersion = "3.5"; // Incremented version for updating jeonggwa and oranda5+mix pricing
         const savedVersion = localStorage.getItem('haruondam_menu_version');
         const savedItems = localStorage.getItem('haruondam_menu_items');
         
