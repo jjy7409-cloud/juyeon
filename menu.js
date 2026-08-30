@@ -87,20 +87,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 선물 및 프리미엄 세트
         {
-            id: 'set-4type-box',
-            name: '정과 4종 세트 (포장포함)',
-            desc: '호두30g + 생강호두30g + 아몬드30g + 콩고물아몬드30g 구성',
-            cat: 'sets',
-            show: true,
-            price: '12,000'
-        },
-        {
             id: 'set-oranda10',
-            name: '수제 오란다 10개 세트 (박스포장)',
+            name: '수제 오란다 10개 세트 (박스포함)',
             desc: '답례품으로 가장 인기 있는 실속 구성 (맛 혼합)',
             cat: 'sets',
             show: true,
-            price: '23,000'
+            price: '20,000'
         },
         {
             id: 'set-oranda5',
@@ -108,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: '어린이집, 돌잔치 가벼운 선물용 구성',
             cat: 'sets',
             show: true,
-            price: '12,000'
+            price: '10,000'
         },
         {
             id: 'set-oranda5-walnut',
@@ -219,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Initialize Data (Load from localStorage or use defaults)
     const initData = () => {
-        const defaultVersion = "3.1"; // Incremented version for removing 30g jeonggwa and renaming choco oranda
+        const defaultVersion = "3.2"; // Incremented version for removing 4-type set and updating oranda set prices
         const savedVersion = localStorage.getItem('haruondam_menu_version');
         const savedItems = localStorage.getItem('haruondam_menu_items');
         
