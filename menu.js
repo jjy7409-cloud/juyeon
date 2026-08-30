@@ -134,14 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
             show: true,
             price: '26,000'
         },
-        {
-            id: 'set-4type-premium',
-            name: '정과 4종 특선 세트 (박스/쇼핑백)',
-            desc: '최고급 세트 (호두120g + 생강호두110g + 콩고물아몬드200g)',
-            cat: 'sets',
-            show: true,
-            price: '42,000'
-        },
 
         // 기타 상품
         {
@@ -203,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Initialize Data (Load from localStorage or use defaults)
     const initData = () => {
-        const defaultVersion = "3.3"; // Incremented version for updating gift sets and deleting 3-type set
+        const defaultVersion = "3.4"; // Incremented version for deleting 4-type premium set
         const savedVersion = localStorage.getItem('haruondam_menu_version');
         const savedItems = localStorage.getItem('haruondam_menu_items');
         
