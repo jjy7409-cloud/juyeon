@@ -28,6 +28,7 @@
                     <li><a href="#packaging" class="nav-link">포장 & 견적</a></li>
                     <li><a href="#process" class="nav-link">주문 & 배송</a></li>
                     <li><a href="#hygiene" class="nav-link">필수 표기</a></li>
+                    <li><a href="menu.html" class="nav-link" style="color: var(--accent); font-weight: 700;"><i class="fa-solid fa-print" style="margin-right: 4px;"></i>가격표 인쇄/저장</a></li>
                     <li><a href="https://smartstore.naver.com/greenbites" class="nav-link" target="_blank" style="color: #03c75a; font-weight: 700;">스마트스토어</a></li>
                     <li><a href="#contact" class="btn btn-nav">견적 문의</a></li>
                 </ul>
@@ -221,90 +222,93 @@
             <!-- Tab Panel 2: Oranda -->
             <div id="tab-oranda" class="tab-panel">
                 <div class="programs-grid">
-                    <!-- Product 1 (기본 오란다) -->
+                    <!-- Product 1 (견과 오란다) -->
                     <div class="program-card">
                         <div class="program-image-area">
-                            <div class="oranda-placeholder oranda-classic-bg">
-                                <span class="placeholder-emoji">🍯</span>
-                                <span class="placeholder-tag">Premium Classic</span>
-                            </div>
-                            <div class="program-badge">부드러움의 정석</div>
+                            <img src="images/oranda_walnut.jpg" alt="견과오란다" class="product-grid-img" loading="lazy">
+                            <div class="program-badge">고소하고 담백</div>
                         </div>
                         <div class="program-content">
-                            <h3 class="program-title">수제 기본 오란다</h3>
-                            <p class="program-desc">100% 국내산 쌀조청과 비정제 원당을 사용하여 자극적이지 않고 은은한 단맛을 냈습니다. 이가 아프지 않고 촉촉하며 부드러운 식감이 특징인 하루온담의 대표 수제 과자입니다.</p>
+                            <h3 class="program-title">견과오란다</h3>
+                            <p class="program-desc">호두, 아몬드, 땅콩, 해바라기씨 등 영양 가득한 견과류를 듬뿍 토핑하여 씹는 맛의 다채로움과 극대화된 고소함을 모두 잡은 프리미엄 오란다입니다.</p>
                             <div class="program-meta">
-                                <span><i class="fa-solid fa-droplet"></i> 100% 국내산 쌀조청 사용</span>
-                                <span><i class="fa-solid fa-feather"></i> 촉촉하고 부드러운 식감</span>
+                                <span><i class="fa-solid fa-nut"></i> 견과류 토핑 가득</span>
+                                <span><i class="fa-solid fa-sun"></i> 오븐에 구워 바삭함</span>
                             </div>
-                            <button class="btn btn-outline btn-block btn-open-modal" data-modal="modal-oranda-classic">상세 보기</button>
+                            <button class="btn btn-outline btn-block btn-open-modal" data-modal="modal-oranda-nut">상세 보기</button>
                         </div>
                     </div>
-                    <!-- Product 2 (초코 오란다) -->
+                    <!-- Product 2 (유자 오란다) -->
                     <div class="program-card">
                         <div class="program-image-area">
-                            <img src="images/oranda_chocolate.jpg" alt="수제 초코 오란다" class="product-grid-img" loading="lazy">
-                            <div class="program-badge">젊은층 인기</div>
+                            <div class="oranda-placeholder oranda-yuzu-bg">
+                                <span class="placeholder-emoji">🍊</span>
+                                <span class="placeholder-tag">Yuzu Oranda</span>
+                            </div>
+                            <div class="program-badge">상큼하고 향긋</div>
                         </div>
                         <div class="program-content">
-                            <h3 class="program-title">수제 초코 오란다</h3>
-                            <p class="program-desc">부드러운 오란다 위에 벨기에산 다크 초콜릿의 부드러움을 더해 입안 가득 맴도는 은은하고 묵직한 카카오 단맛이 일품인 영양 간식입니다.</p>
+                            <h3 class="program-title">유자오란다</h3>
+                            <p class="program-desc">향긋하고 새콤달콤한 국내산 유자청과 유자 필을 조청 소스에 조화롭게 입혀, 한 입 베어 물 때마다 상큼한 시트러스 풍미가 입안에 은은하게 퍼지는 오란다입니다.</p>
                             <div class="program-meta">
-                                <span><i class="fa-solid fa-candy-cane"></i> 진한 초콜릿 코팅</span>
-                                <span><i class="fa-solid fa-heart"></i> 아이들과 젊은 고객 추천</span>
+                                <span><i class="fa-solid fa-lemon"></i> 국내산 유자 사용</span>
+                                <span><i class="fa-solid fa-wand-magic-sparkles"></i> 향긋하고 깔끔한 뒷맛</span>
                             </div>
-                            <button class="btn btn-outline btn-block btn-open-modal" data-modal="modal-oranda-chocolate">상세 보기</button>
+                            <button class="btn btn-outline btn-block btn-open-modal" data-modal="modal-oranda-yuzu">상세 보기</button>
                         </div>
                     </div>
-                    <!-- Product 3 (호두정과 오란다) -->
+                    <!-- Product 3 (감태 오란다) -->
                     <div class="program-card">
                         <div class="program-image-area">
-                            <img src="images/oranda_walnut.jpg" alt="수제 호두정과 오란다" class="product-grid-img" loading="lazy">
-                            <div class="program-badge">식감의 컬래버</div>
-                        </div>
-                        <div class="program-content">
-                            <h3 class="program-title">수제 호두정과 오란다</h3>
-                            <p class="program-desc">부드러운 오란다 베이스 위에 하루온담만의 바삭한 수제 호두정과를 통째로 올려, 씹는 맛의 다채로움과 극대화된 고소함을 모두 잡은 고급 메뉴입니다.</p>
-                            <div class="program-meta">
-                                <span><i class="fa-solid fa-circle-nodes"></i> 명품 호두정과 토핑 듬뿍</span>
-                                <span><i class="fa-solid fa-gift"></i> 품격 있는 간식 선물</span>
-                            </div>
-                            <button class="btn btn-outline btn-block btn-open-modal" data-modal="modal-oranda-walnut">상세 보기</button>
-                        </div>
-                    </div>
-                    <!-- Product 4 (딸기크런키 오란다) -->
-                    <div class="program-card">
-                        <div class="program-image-area">
-                            <img src="images/oranda_strawberry.jpg" alt="수제 딸기크런키 오란다" class="product-grid-img" loading="lazy">
-                            <div class="program-badge">돌잔치 1위</div>
-                        </div>
-                        <div class="program-content">
-                            <h3 class="program-title">수제 딸기크런키 오란다</h3>
-                            <p class="program-desc">동결건조 국산 딸기 크런키를 듬뿍 토핑해 새콤달콤한 맛은 물론 화사하고 사랑스러운 비주얼을 자랑합니다. 결혼 및 돌잔치 답례품으로 시선강탈 1순위 메뉴입니다.</p>
-                            <div class="program-meta">
-                                <span><i class="fa-solid fa-wand-magic-sparkles"></i> 동결건조 딸기 토핑</span>
-                                <span><i class="fa-solid fa-cake-candles"></i> 화사한 돌잔치/파티용</span>
-                            </div>
-                            <button class="btn btn-outline btn-block btn-open-modal" data-modal="modal-oranda-strawberry">상세 보기</button>
-                        </div>
-                    </div>
-                    <!-- Product 5 (감태 오란다) -->
-                    <div class="program-card">
-                        <div class="program-image-area">
-                            <div class="oranda-placeholder oranda-black-bg">
+                            <div class="oranda-placeholder oranda-gamtae-bg">
                                 <span class="placeholder-emoji">🌿</span>
                                 <span class="placeholder-tag">Gamtae Oranda</span>
                             </div>
-                            <div class="program-badge">바다 향 가득</div>
+                            <div class="program-badge">단짠의 정석</div>
                         </div>
                         <div class="program-content">
-                            <h3 class="program-title">수제 감태 오란다</h3>
-                            <p class="program-desc">국내산 감태를 바삭하게 구워 향긋한 바다 향을 오란다 결마다 꼼꼼하게 입혔습니다. 짭조름하고 은은한 풍미가 쌀오란다의 담백함과 절묘하게 어우러지는 웰빙 간식입니다.</p>
+                            <h3 class="program-title">감태오란다</h3>
+                            <p class="program-desc">국내산 청정 감태를 오란다 결마다 아낌없이 입혔습니다. 짭조름하고 향긋한 바다 향이 쌀조청의 단맛과 절묘하게 어우러져 고급스럽고 담백한 단짠을 구현합니다.</p>
                             <div class="program-meta">
                                 <span><i class="fa-solid fa-water"></i> 국내산 감태 사용</span>
-                                <span><i class="fa-solid fa-briefcase"></i> 격식 있는 기업 행사 및 상견례</span>
+                                <span><i class="fa-solid fa-crown"></i> 격식 있는 선물 추천</span>
                             </div>
                             <button class="btn btn-outline btn-block btn-open-modal" data-modal="modal-oranda-gamtae">상세 보기</button>
+                        </div>
+                    </div>
+                    <!-- Product 4 (초코토링 오란다) -->
+                    <div class="program-card">
+                        <div class="program-image-area">
+                            <img src="images/oranda_chocolate.jpg" alt="초코토링오란다" class="product-grid-img" loading="lazy">
+                            <div class="program-badge">달콤한 즐거움</div>
+                        </div>
+                        <div class="program-content">
+                            <h3 class="program-title">초코토링오란다</h3>
+                            <p class="program-desc">부드러운 오란다 위에 진하고 달콤한 벨기에산 초콜릿 코팅과 바삭한 크런치 토핑을 올려, 한 입 먹는 순간 풍부한 초콜릿 풍미와 바삭함이 특징인 디저트 오란다입니다.</p>
+                            <div class="program-meta">
+                                <span><i class="fa-solid fa-candy-cane"></i> 벨기에산 다크 초콜릿</span>
+                                <span><i class="fa-solid fa-face-smile"></i> 젊은 층 및 아이들 최고 인기</span>
+                            </div>
+                            <button class="btn btn-outline btn-block btn-open-modal" data-modal="modal-oranda-chocotoring">상세 보기</button>
+                        </div>
+                    </div>
+                    <!-- Product 5 (콩고물 오란다) -->
+                    <div class="program-card">
+                        <div class="program-image-area">
+                            <div class="oranda-placeholder oranda-konggopul-bg">
+                                <span class="placeholder-emoji">🌾</span>
+                                <span class="placeholder-tag">Bean Flour Oranda</span>
+                            </div>
+                            <div class="program-badge">할매입맛 강추</div>
+                        </div>
+                        <div class="program-content">
+                            <h3 class="program-title">콩고물오란다</h3>
+                            <p class="program-desc">쫀득하고 말랑한 오란다 위에 고소하고 담백한 국내산 콩고물을 듬뿍 입혀내어, 구수하고 깊은 인절미의 맛을 전통 한과 식감으로 재해석한 웰빙 오란다입니다.</p>
+                            <div class="program-meta">
+                                <span><i class="fa-solid fa-seedling"></i> 100% 국내산 콩고물</span>
+                                <span><i class="fa-solid fa-heart"></i> 은은하고 고소한 단맛</span>
+                            </div>
+                            <button class="btn btn-outline btn-block btn-open-modal" data-modal="modal-oranda-konggopul">상세 보기</button>
                         </div>
                     </div>
                 </div>
@@ -376,11 +380,11 @@
                 <!-- Set 6 -->
                 <div class="set-menu-card">
                     <div class="set-img-frame">
-                        <img src="images/set_2type.jpg" alt="호두정과 120g + 아몬드정과 200g 세트" loading="lazy">
+                        <img src="images/set_2type.jpg" alt="호두정과 110g + 아몬드정과 200g 세트" loading="lazy">
                     </div>
                     <div class="set-card-content">
-                        <h3>호두정과 120g + 아몬드정과 200g 세트</h3>
-                        <p class="set-composition">구성: 호두정과 120g + 아몬드정과 200g</p>
+                        <h3>호두정과 110g + 아몬드정과 200g 세트</h3>
+                        <p class="set-composition">구성: 호두정과 110g + 아몬드정과 200g</p>
                         <p class="set-desc">바삭바삭 오븐에 구워 떫은맛 없이 담백한 호두정과와 남녀노소 영양 만점의 최상급 아몬드정과의 2종 콜라보입니다.</p>
 
                     </div>
@@ -388,11 +392,11 @@
                 <!-- Set 7 -->
                 <div class="set-menu-card">
                     <div class="set-img-frame">
-                        <img src="images/set_2type_ginger.jpg" alt="호두정과 120g + 생강호두정과 110g 세트" loading="lazy">
+                        <img src="images/set_2type_ginger.jpg" alt="호두정과 110g + 생강호두정과 110g 세트" loading="lazy">
                     </div>
                     <div class="set-card-content">
-                        <h3>호두정과 120g + 생강호두정과 110g 세트</h3>
-                        <p class="set-composition">구성: 호두정과 120g + 생강호두정과 110g</p>
+                        <h3>호두정과 110g + 생강호두정과 110g 세트</h3>
+                        <p class="set-composition">구성: 호두정과 110g + 생강호두정과 110g</p>
                         <p class="set-desc">인기 오리지널 호두정과와 직접 손수 세척해 착즙한 국내산 생강 원즙의 향긋함을 입힌 명품 생강호두정과의 조합입니다.</p>
 
                     </div>
@@ -404,7 +408,7 @@
                     </div>
                     <div class="set-card-content">
                         <h3>호두정과 + 생강호두정과 + 아몬드정과 3종 세트</h3>
-                        <p class="set-composition">구성: 호두 120g + 생강호두 110g + 아몬드 200g</p>
+                        <p class="set-composition">구성: 호두 110g + 생강호두 110g + 아몬드 200g</p>
                         <p class="set-desc">양가 어르신 명절 선물이나 첫인상 상견례 자리, 중요한 예단 선물에 가장 많이 선택되는 3종 대용량 명품 세트입니다.</p>
 
                     </div>
@@ -544,27 +548,26 @@
                         <label for="calc-type">선택 상품 및 세트 구성</label>
                         <select id="calc-type">
                             <optgroup label="[수제 정과 라인]">
-                                <option value="signature-mix" data-price="3500">수제 시그니처 믹스 40g 단품 (3,500원)</option>
                                 <option value="walnut-l" data-price="5900">수제 호두정과 80g 단품 (5,900원)</option>
                                 <option value="ginger-l" data-price="6900">수제 생강호두정과 80g 단품 (6,900원)</option>
                                 <option value="almond-l" data-price="5900">수제 아몬드정과 80g 단품 (5,900원)</option>
                                 <option value="kongalmond-l" data-price="6900">수제 콩고물아몬드정과 80g 단품 (6,900원)</option>
                             </optgroup>
                             <optgroup label="[수제 오란다 라인]">
-                                <option value="oranda-classic" data-price="2000">수제 플레인 오란다 단품 (2,000원)</option>
-                                <option value="oranda-chocolate" data-price="2500">수제 초코 오란다 단품 (2,500원)</option>
-                                <option value="oranda-walnut" data-price="2500">수제 호두정과 오란다 단품 (2,500원)</option>
-                                <option value="oranda-strawberry" data-price="2500">수제 딸기크런키 오란다 단품 (2,500원)</option>
-                                <option value="oranda-gamtae" data-price="2500">수제 감태 오란다 단품 (2,500원)</option>
+                                <option value="oranda-nut" data-price="2000">견과오란다 (2,000원)</option>
+                                <option value="oranda-yuzu" data-price="2000">유자오란다 (2,000원)</option>
+                                <option value="oranda-gamtae" data-price="2000">감태오란다 (2,000원)</option>
+                                <option value="oranda-chocotoring" data-price="2000">초코토링오란다 (2,000원)</option>
+                                <option value="oranda-konggopul" data-price="2000">콩고물오란다 (2,000원)</option>
                             </optgroup>
                             <optgroup label="[프리미엄 세트 구성]">
                                 <option value="set-4type-pkg" data-price="12000">정과 4종 세트 박스포장 (30g씩) (12,000원)</option>
                                 <option value="set-oranda10" data-price="23000">오란다 10개 세트 박스포장 (23,000원)</option>
                                 <option value="set-oranda5" data-price="12000">오란다 5개 세트 박스포장 (12,000원)</option>
                                 <option value="set-oranda5-walnut" data-price="18900">오란다 5개+호두정과 80g 세트 (18,900원)</option>
-                                <option value="mixed-walnut-almond" data-price="22000">호두정과 120g+아몬드정과 200g 세트 (22,000원)</option>
-                                <option value="mixed-walnut-ginger" data-price="24000">호두정과 120g+생강호두정과 110g 세트 (24,000원)</option>
-                                <option value="mixed-3type" data-price="33000">호두정과+생강호두정과+아몬드정과 3종 세트 (33,000원)</option>
+                                <option value="mixed-walnut-almond" data-price="24000">호두정과 110g+아몬드정과 200g 세트 (24,000원)</option>
+                                <option value="mixed-walnut-ginger" data-price="24000">호두정과 110g+생강호두정과 110g 세트 (24,000원)</option>
+                                <option value="mixed-3type" data-price="36000">호두정과+생강호두정과+아몬드정과 3종 세트 (36,000원)</option>
                             </optgroup>
                             <optgroup label="[기타 상품]">
                                 <option value="ot-paji" data-price="4500">못난이토핑용 호두정과 파지 100g (4,500원)</option>
@@ -605,6 +608,11 @@
                         <span class="total-price" id="calc-result">225,000원</span>
                     </div>
                     <p class="calc-tip">* 배송비 및 정밀 포장 사양에 따라 변동 가능합니다.</p>
+                    <div style="margin-top: 15px; text-align: center;">
+                        <a href="menu.html" class="btn btn-outline btn-block" style="display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; border-color: var(--primary); color: var(--primary);">
+                            <i class="fa-solid fa-print"></i> 전체 가격표 인쇄 & 이미지 저장
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -845,7 +853,7 @@
                         </tr>
                         <tr>
                             <td>시그니처 유리병 포장</td>
-                            <td>120g</td>
+                            <td>110g</td>
                             <td>고급 단상자 + 리본 띠지 포장</td>
                         </tr>
                         <tr>
@@ -944,7 +952,7 @@
                         </tr>
                         <tr>
                             <td>삼합 명절 모둠 세트</td>
-                            <td>3종 정과 각 120g</td>
+                            <td>호두 110g, 생강 110g, 아몬드 200g</td>
                             <td>고급 하드 상자 + 3단 한지 띠지 포장</td>
                         </tr>
                     </tbody>
@@ -953,114 +961,52 @@
         </div>
     </div>
 
-    <!-- Modal 4: 기본 오란다 -->
-    <div id="modal-oranda-classic" class="modal">
+    <!-- Modal 4: 견과 오란다 -->
+    <div id="modal-oranda-nut" class="modal">
         <div class="modal-content">
-            <span class="modal-close" data-modal="modal-oranda-classic">&times;</span>
-            <div class="modal-header">
-                <h3>수제 기본 오란다 상세 정보</h3>
-            </div>
-            <div class="modal-body">
-                <h4>제품 특징</h4>
-                <p>기존 오란다의 딱딱하고 질긴 단점을 완전히 개선하여, 남녀노소 누구나 치아 부담 없이 즐기실 수 있도록 촉촉하고 부드러운 식감을 황금온도로 잡아냈습니다. 인공 물엿 대신 100% 국내산 쌀조청과 비정제 원당을 사용하여 단맛이 혀끝에 과하게 남지 않고 깊고 건강하게 어우러집니다.</p>
-                <h4>성분 정보</h4>
-                <ul>
-                    <li><strong>주재료:</strong> 쌀오란다(국내산 쌀가루), 국내산 쌀조청, 비정제 원당, 무염버터</li>
-                    <li><strong>보관 방식:</strong> 건조하고 서늘한 곳에 밀봉 보관 (여름철 냉장 보관 시에는 드시기 10분 전 꺼내어 실온에 두시면 부드러움이 돌아옵니다)</li>
-                    <li><strong>유통 기한:</strong> 제조일로부터 상온 45일</li>
-                </ul>
-                <h4>답례품 패키지 옵션</h4>
-                <table class="curriculum-table">
-                    <thead>
-                        <tr>
-                            <th>종류</th>
-                            <th>수량/규격</th>
-                            <th>포장 및 가격대</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>실속형 개별 낱개 포장</td>
-                            <td>1개입 (약 35g)</td>
-                            <td>감사 스티커 부착 투명 OPP 비닐</td>
-                        </tr>
-                        <tr>
-                            <td>오란다 5종 모둠 세트</td>
-                            <td>5개입 (종류별 각 1개)</td>
-                            <td>수제 크라프트 슬라이드 박스 포장</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 5: 초코 오란다 -->
-    <div id="modal-oranda-chocolate" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" data-modal="modal-oranda-chocolate">&times;</span>
-            <div class="modal-header bg-pink">
-                <h3>수제 초코 오란다 상세 정보</h3>
-            </div>
-            <div class="modal-body">
-                <h4>제품 특징</h4>
-                <p>촉촉하고 쫀득한 기본 오란다 위에 벨기에산 프리미엄 다크 초콜릿(cacao 57% 이상)을 듬뿍 토핑하였습니다. 초콜릿의 쌉싸름하면서도 달콤한 서양식 풍미가 전통 오란다의 쌀조청 단맛과 만나 이색적이고 풍성한 단맛을 구현합니다.</p>
-                <h4>성분 정보</h4>
-                <ul>
-                    <li><strong>주재료:</strong> 쌀오란다(국내산 쌀가루), 다크 초콜릿 코팅 15%(벨기에산), 국내산 쌀조청, 비정제 원당, 버터</li>
-                    <li><strong>보관 방식:</strong> 초콜릿이 녹을 수 있으므로 여름철에는 반드시 냉장 보관을 권장합니다.</li>
-                    <li><strong>유통 기한:</strong> 제조일로부터 상온 30일 / 냉장 보관 시 45일</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 6: 호두정과 오란다 -->
-    <div id="modal-oranda-walnut" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" data-modal="modal-oranda-walnut">&times;</span>
+            <span class="modal-close" data-modal="modal-oranda-nut">&times;</span>
             <div class="modal-header bg-blue">
-                <h3>수제 호두정과 오란다 상세 정보</h3>
+                <h3>견과오란다 상세 정보</h3>
             </div>
             <div class="modal-body">
                 <h4>제품 특징</h4>
-                <p>하루온담의 대표 프리미엄 상품인 '수제 호두정과'를 오란다 위에 아낌없이 올렸습니다. 오란다 자체의 촉촉하고 부드러운 씹는 맛과 오븐에 구워낸 호두정과의 아삭하고 고소한 씹는 맛이 입안에서 동시에 어우러져 최상의 품격을 자랑하는 시그니처 믹스 상품입니다.</p>
+                <p>바삭하고 쫀득한 오란다 위에 호두, 아몬드, 해바라기씨, 땅콩 등 다양한 견과류를 가득 올려내어 맛과 영양을 모두 잡았습니다. 기름 없이 오븐에 구워내어 견과 본연의 고소함이 한층 더 살고, 쌀조청의 단맛과 최고의 조화를 이룹니다.</p>
                 <h4>성분 정보</h4>
                 <ul>
-                    <li><strong>주재료:</strong> 쌀오란다(국내산 쌀가루), 수제 호두정과 12%(호두, 비정제원당), 국내산 쌀조청, 비정제 원당, 버터</li>
-                    <li><strong>보관 방식:</strong> 건조 서늘한 곳 보관 (호두 산패 방지를 위해 밀봉 필수)</li>
+                    <li><strong>주재료:</strong> 쌀오란다(국내산 쌀가루), 호두, 아몬드, 땅콩, 해바라기씨, 국내산 쌀조청, 비정제 원당, 버터</li>
+                    <li><strong>보관 방식:</strong> 직사광선을 피하고 서늘한 곳에 밀봉 보관 (호두 산패 방지를 위해 밀봉 필수)</li>
                     <li><strong>유통 기한:</strong> 제조일로부터 상온 30일</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Modal 7: 딸기크런키 오란다 -->
-    <div id="modal-oranda-strawberry" class="modal">
+    <!-- Modal 5: 유자 오란다 -->
+    <div id="modal-oranda-yuzu" class="modal">
         <div class="modal-content">
-            <span class="modal-close" data-modal="modal-oranda-strawberry">&times;</span>
+            <span class="modal-close" data-modal="modal-oranda-yuzu">&times;</span>
             <div class="modal-header">
-                <h3>수제 딸기크런키 오란다 상세 정보</h3>
+                <h3>유자오란다 상세 정보</h3>
             </div>
             <div class="modal-body">
                 <h4>제품 특징</h4>
-                <p>인위적인 합성 딸기 향료나 색소 대신, 100% 국산 딸기를 그대로 급속 동결 건조하여 부숴 만든 리얼 딸기 크런키를 토핑했습니다. 핑크빛 비주얼로 웨딩 및 아기 돌잔치의 화사한 파티 분위기에 가장 잘 어울리며, 상큼한 베리 향이 입안을 산뜻하게 돋워 줍니다.</p>
+                <p>새콤달콤한 국내산 유자청과 쫀득한 유자 필을 비법 조청 소스에 정성껏 배합하여 은은하고 고급스러운 시트러스 향을 오란다 결마다 채웠습니다. 씹을수록 향긋함이 배어 나와 차나 커피와 곁들여 드시기 좋습니다.</p>
                 <h4>성분 정보</h4>
                 <ul>
-                    <li><strong>주재료:</strong> 쌀오란다(국내산 쌀가루), 동결건조 딸기 크런키 8%(국산 딸기 100%), 국내산 쌀조청, 비정제 원당, 버터</li>
-                    <li><strong>보관 방식:</strong> 습기에 노출되면 크런키가 눅눅해질 수 있으니 건조한 곳에 밀봉 보관하세요.</li>
+                    <li><strong>주재료:</strong> 쌀오란다(국내산 쌀가루), 국내산 유자청, 유자필, 국내산 쌀조청, 비정제 원당, 버터</li>
+                    <li><strong>보관 방식:</strong> 서늘하고 건조한 실온 보관</li>
                     <li><strong>유통 기한:</strong> 제조일로부터 상온 30일</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Modal 8: 감태 오란다 -->
+    <!-- Modal 6: 감태 오란다 -->
     <div id="modal-oranda-gamtae" class="modal">
         <div class="modal-content">
             <span class="modal-close" data-modal="modal-oranda-gamtae">&times;</span>
             <div class="modal-header bg-dark">
-                <h3>수제 감태 오란다 상세 정보</h3>
+                <h3>감태오란다 상세 정보</h3>
             </div>
             <div class="modal-body">
                 <h4>제품 특징</h4>
@@ -1070,6 +1016,46 @@
                     <li><strong>주재료:</strong> 쌀오란다(국내산 쌀가루), 국내산 감태, 국내산 쌀조청, 비정제 원당, 버터</li>
                     <li><strong>보관 방식:</strong> 서늘하고 건조한 곳 실온 보관</li>
                     <li><strong>유통 기한:</strong> 제조일로부터 상온 45일</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: 초코토링 오란다 -->
+    <div id="modal-oranda-chocotoring" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" data-modal="modal-oranda-chocotoring">&times;</span>
+            <div class="modal-header bg-pink">
+                <h3>초코토링오란다 상세 정보</h3>
+            </div>
+            <div class="modal-body">
+                <h4>제품 특징</h4>
+                <p>촉촉하고 쫀득한 오란다 위에 진하고 깊은 벨기에산 다크 초콜릿을 입히고, 그 위에 바삭한 크런치 토핑(초코토링)을 더해 바삭한 식감과 풍성한 단맛을 구현했습니다. 기존의 초콜릿 오란다에서 한 단계 업그레이드되어 젊은 층뿐만 아니라 온 가족의 달콤한 영양 간식으로 적극 추천합니다.</p>
+                <h4>성분 정보</h4>
+                <ul>
+                    <li><strong>주재료:</strong> 쌀오란다(국내산 쌀가루), 다크 초콜릿(벨기에산), 초코 크런치, 국내산 쌀조청, 비정제 원당, 버터</li>
+                    <li><strong>보관 방식:</strong> 초콜릿이 녹을 수 있으므로 여름철에는 냉장 보관을 권장하며, 실온에 잠시 꺼내 두었다가 드시면 부드럽게 즐기실 수 있습니다.</li>
+                    <li><strong>유통 기한:</strong> 제조일로부터 상온 30일 / 냉장 보관 시 45일</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8: 콩고물 오란다 -->
+    <div id="modal-oranda-konggopul" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" data-modal="modal-oranda-konggopul">&times;</span>
+            <div class="modal-header bg-blue">
+                <h3>콩고물오란다 상세 정보</h3>
+            </div>
+            <div class="modal-body">
+                <h4>제품 특징</h4>
+                <p>달콤하고 부드러운 오란다 표면에 곱고 구수한 국내산 콩가루(콩고물)를 아낌없이 가득 묻혀내어, 구수한 인절미 떡의 풍미를 바삭하고 쫀득한 오란다로 즐기실 수 있는 웰빙 제품입니다. 자극적이지 않고 은은하게 입안에 맴도는 담백한 고소함이 특징입니다.</p>
+                <h4>성분 정보</h4>
+                <ul>
+                    <li><strong>주재료:</strong> 쌀오란다(국내산 쌀가루), 국내산 콩고물, 국내산 쌀조청, 비정제 원당, 버터</li>
+                    <li><strong>보관 방식:</strong> 습기에 민감하므로 공기가 통하지 않게 밀봉 보관하세요.</li>
+                    <li><strong>유통 기한:</strong> 제조일로부터 상온 30일</li>
                 </ul>
             </div>
         </div>

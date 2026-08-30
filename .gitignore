@@ -1,6 +1,7 @@
 # Ignore practice files subfolder
 실습파일/
 node_modules/
+images_backup/
 package.json
 package-lock.json
 *.xlsx

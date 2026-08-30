@@ -1437,6 +1437,18 @@ strong {
     background: radial-gradient(circle at center, #6A6E72 0%, #2A2C2E 100%);
 }
 
+.oranda-yuzu-bg {
+    background: radial-gradient(circle at center, #FFF4D0 0%, #F4C430 100%);
+}
+
+.oranda-gamtae-bg {
+    background: radial-gradient(circle at center, #D2E7D6 0%, #4D7E5A 100%);
+}
+
+.oranda-konggopul-bg {
+    background: radial-gradient(circle at center, #F7E7D0 0%, #C4A482 100%);
+}
+
 /* Sticker Service Section Styles */
 .sticker-section {
     background-color: var(--accent-light);
