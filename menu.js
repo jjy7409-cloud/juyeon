@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: '답례품으로 가장 인기 있는 실속 구성 (맛 혼합)',
             cat: 'sets',
             show: true,
-            price: '20,000'
+            price: '21,000'
         },
         {
             id: 'set-oranda5',
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: '어린이집, 돌잔치 가벼운 선물용 구성',
             cat: 'sets',
             show: true,
-            price: '10,000'
+            price: '11,000'
         },
         {
             id: 'set-oranda5-walnut',
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Initialize Data (Load from localStorage or use defaults)
     const initData = () => {
-        const defaultVersion = "3.5"; // Incremented version for updating jeonggwa and oranda5+mix pricing
+        const defaultVersion = "3.6"; // Incremented version for updating oranda 5-pack and 10-pack set pricing
         const savedVersion = localStorage.getItem('haruondam_menu_version');
         const savedItems = localStorage.getItem('haruondam_menu_items');
         
