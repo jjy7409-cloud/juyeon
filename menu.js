@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
             show: true,
             price: '4,500'
         }
-    ]];
+    ];
 
     let currentItems = [];
     
